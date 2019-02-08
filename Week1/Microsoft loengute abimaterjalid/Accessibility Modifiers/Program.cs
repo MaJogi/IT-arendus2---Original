@@ -21,7 +21,7 @@ namespace Accessibility_Modifiers
             //Faili salvestamine
             File.WriteAllText(@"C:\Lesson17\WriteText.txt", reply);
 
-           
+            
         }
     }
 }
