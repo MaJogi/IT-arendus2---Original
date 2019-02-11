@@ -37,6 +37,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events and Event-Driven Pro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "Week1\Microsoft loengute abimaterjalid\WpfApp\WpfApp.csproj", "{60A573A1-D813-41E0-921F-CF9F300973F1}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week2", "Week2", "{95E44FDF-DE8E-429B-A7CA-01ED15A2054D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HTML5_CSS3_tips", "HTML5_CSS3_tips", "{0122BE39-508A-434D-9A52-F99CB555F938}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creating first HTML page", "Creating first HTML page", "{7D90EA97-3F3C-4FA4-B907-70970D7F25F2}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\html txt file.txt = ..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\html txt file.txt
+		..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\http-message.gif = ..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\http-message.gif
+		..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\lesson2.html = ..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\lesson2.html
+		..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\www-diagram.gif = ..\..\..\Downloads\10152015100748\C9HTMLCode\Lesson02\Work\www-diagram.gif
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -124,6 +136,8 @@ Global
 		{2E713C02-CA98-4DA2-B961-14D03FB0D39F} = {66EBEC10-ADDA-447A-AC2C-58A6E5F91B46}
 		{5ECFBCD0-33FD-4F03-9C6B-B57B73082542} = {66EBEC10-ADDA-447A-AC2C-58A6E5F91B46}
 		{60A573A1-D813-41E0-921F-CF9F300973F1} = {66EBEC10-ADDA-447A-AC2C-58A6E5F91B46}
+		{0122BE39-508A-434D-9A52-F99CB555F938} = {95E44FDF-DE8E-429B-A7CA-01ED15A2054D}
+		{7D90EA97-3F3C-4FA4-B907-70970D7F25F2} = {0122BE39-508A-434D-9A52-F99CB555F938}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {62A23615-F2D9-4D1D-ADCE-D3965C878FDF}
