@@ -5,3 +5,4 @@ console.log('Answer: ' + z);
 
 var a;
 const b;
+var c;
