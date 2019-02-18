@@ -1,12 +1,12 @@
 var counter = (function() {
     
-    // private stuff
+    // privaatne osa
     let count = 0;
     function print(message) {
         console.log(message + "---" + count);
     }
 
-    // return an object
+    // väljasta objekt
     return {
         //value: count,
         get: function() { return count; },

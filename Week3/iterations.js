@@ -13,9 +13,9 @@ let a = [4, 8, 15, 16, 23, 42];
 // }
 let x = 1;
 while (x < 10) {
-    console.log(x++); // first: print out x and then add +1 to it.
+    console.log(x++); // esiteks, prindi välja x ja seejärel lisa +1 talle.
 
-    if (x == 7) break; //short way format
+    if (x == 7) break; //lühikene if'i formaat.
 
     if (x == 7) {
         break;

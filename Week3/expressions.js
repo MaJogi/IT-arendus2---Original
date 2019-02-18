@@ -1,23 +1,23 @@
-//this is bad:
+//See on halb näide:
 a;
 
-// Types of expressions
+// Expressioni tüübid
 // ====================
 
-// 1. Variable Declaration
+// 1. Muutuja deklareerimine
 let a;
 
-// 2. Assign a value
+// 2. Väärtuse omistamine
 //a = 4;
 
-// Perform an evaluation that returns a single value
+// Tee operatsioon ja väljasta üks väärtus
 // b + c
 
 let b = 3;
 let c = 2;
-// Three expressions in here ... can you find them?
+// Siin on kolm expressioni
 let a = b + c;
 
-// 1. let a variable declaration
-// 2. perform an eval b + c
-// 3. result assigned to a 
+// 1. let a muutuja deklareerimine
+// 2. tee b + c
+// 3. result omistatakse a'le.

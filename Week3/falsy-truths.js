@@ -6,7 +6,7 @@ if (NaN)       {} else { console.log('NaN is falsy'); }
 if ('')        {} else { console.log('an empty string with single-quotes is falsy'); }
 if ("")        {} else { console.log('an empty string with double-quotes is falsy'); }
 
-// Everything else is truthy
+// Kõik muu on tõene
 
 if (true)         { console.log('true is truthy'); }
 if ({})           { console.log('an empty object is truthy'); }

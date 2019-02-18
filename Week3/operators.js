@@ -7,7 +7,7 @@ console.log(m);
 // Increment / Decrement ++ --
 var a = 1;
 a++;
-console.log(a++); // A IS ALREADY PRINTED INCREMENTATION IS DONE AFTER
+console.log(a++); // incremintation is done after printing variable out.
 //console.log(++a) to make it work the way it's ment to.
 console.log(a);
 

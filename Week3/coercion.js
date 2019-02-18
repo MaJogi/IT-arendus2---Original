@@ -1,7 +1,7 @@
 let a = 7;
 let b = '6';
-b = parseInt(b, 10); //10 for decimal conversion
-let c = a + b; //concatinating together number and string to form string
+b = parseInt(b, 10); //10 kümnendsüsteemi konvertimisel.
+let c = a + b; //Liidan kokku numbri ja sõne, et saada sõne.
 console.log('Answer: ' + c);
 
 let d = parseInt('bob', 10);

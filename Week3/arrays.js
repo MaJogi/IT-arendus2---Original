@@ -12,7 +12,7 @@ console.log(typeof a);
 let c = [4, 'alex', true];
 console.log(c);
 
-console.log(a.length); // actual number, NOT zero based
+console.log(a.length); // päris number, mis ei ole nulli põhine.
 
 a[10] = 77;
 console.log(a);

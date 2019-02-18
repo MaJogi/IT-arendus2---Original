@@ -22,5 +22,5 @@ let myFunction = new MyFunction();
 
 console.log(typeof myFunction);
 
-// Can't
+
 myFunction();

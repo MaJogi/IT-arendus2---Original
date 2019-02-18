@@ -26,4 +26,4 @@ class SportsCar extends Car {
 let mySportsCar = new SportsCar("dodge", "viper", 2011);
 mySportsCar.print();
 mySportsCar.revEngine();
-//myCar.revEngine(); myCar doesn't have it.
+//myCar.revEngine(); myCar ei oma seda klassi.

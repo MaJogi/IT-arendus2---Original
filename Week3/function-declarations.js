@@ -1,12 +1,12 @@
-function sayHello() { //meaningful name
+function sayHello() { 
     console.log('hello!');
 }
 
 sayHello();
 let a = sayHello; //refrence to the function
-a(); //The way i invoke a function in a variable
+a(); //Viis, kuidas saab välja kutsuda funktsiooni muutujast
 
-function sayHello(name) { //meaningful name
+function sayHello(name) { 
     console.log('hello ' + name + "!");
 }
 

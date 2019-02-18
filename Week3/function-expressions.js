@@ -1,6 +1,6 @@
 // setTimeout(function () { 
 //     console.log('I waited 2 seconds')
-// }, 2000); //num of milliseconds
+// }, 2000); //millisekundite arv
 
 
 // let counter = 0;
