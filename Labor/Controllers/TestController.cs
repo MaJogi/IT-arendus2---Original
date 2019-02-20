@@ -19,10 +19,10 @@ namespace Labor.Controllers
             Employee emp = new Employee();
             emp.FirstName = "Sukesh";
             emp.LastName = "Marla";
-            emp.Salary = 20000;
+            emp.Salary = 1000;
 
-            ViewData["Employee"] = emp;
-            return View("MyView");
+            //ViewBag.Employee = emp;
+            return View("MyView", emp);
         }
     }
 }

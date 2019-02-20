@@ -1,4 +1,4 @@
-﻿
+﻿@model Employee
 @{
     Layout = null;
 }
@@ -11,12 +11,29 @@
     <title>MyView</title>
 </head>
 <body>
-    @{
-        Labor.Models.Employee emp = (Labor.Models.Employee)
-            ViewData["Employee"];
-    }
-<b>Employee Details</b><br />
-Employee Name: @emp.FirstName@emp.LastName <br/>
-Employee Salary: @emp.Salary.ToString("C")
+    <div>
+        @{
+        //Labor.Models.Employee emp = (Labor.Models.Employee)
+        //    ViewData["Employee"];
+        //var emp = (Employee)
+        //    ViewBag.Employee;
+        }
+        <b>Employee Details</b><br />
+        Employee Name : @Model.FirstName @Model.LastName <br />
+        @*Employee Name: @emp.FirstName@emp.LastName <br />*@
+        @*Employee Salary: @emp.Salary.ToString("C")*@
+        @if (Model.Salary > 15000)
+        {
+            <span style="background-color:yellow">
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
+        else
+        {
+            <span style="background-color:green">
+                Employee Salary: @Model.Salary.ToString("C")
+            </span>
+        }
+    </div>
 </body>
 </html>
