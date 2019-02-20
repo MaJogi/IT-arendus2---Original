@@ -39,7 +39,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "Week1\Microsoft l
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week4", "Week4", "{63CE7027-87B1-41EB-9DEA-9FFBC42625B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labor", "Labor\Labor.csproj", "{B3DE340D-189C-4EBC-89F8-01B1EB7589C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labor", "Week4\Labor\Labor.csproj", "{B3DE340D-189C-4EBC-89F8-01B1EB7589C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
