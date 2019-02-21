@@ -6,10 +6,6 @@ namespace Labor.Controllers
 {
     public class TestController : Controller
     {
-        //public string GetString()
-        //{
-        //    return "Hello world!";
-        //}
 
         public ActionResult GetView()
         {
