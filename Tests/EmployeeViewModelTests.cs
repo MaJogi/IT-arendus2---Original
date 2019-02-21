@@ -33,6 +33,7 @@ namespace Tests
         {
             o.setColor(new Employee(null, null, 15001));
             Assert.AreEqual("yellow", o.SalaryColor);
+
         }
     }
 }
