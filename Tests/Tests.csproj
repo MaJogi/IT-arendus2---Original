@@ -65,6 +65,10 @@
       <Project>{59efedd7-659f-4ea6-9d34-b00c90b74ef3}</Project>
       <Name>Facade</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infra\Infra.csproj">
+      <Project>{95beca1d-93bc-4647-9906-004b15da33f2}</Project>
+      <Name>Infra</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Week4\Labor\Labor.csproj">
       <Project>{b3de340d-189c-4ebc-89f8-01b1eb7589c7}</Project>
       <Name>Labor</Name>
