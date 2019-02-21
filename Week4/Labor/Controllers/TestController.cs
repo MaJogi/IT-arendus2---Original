@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Labor.Models;
+﻿using Core;
+using Facade;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Labor.Controllers
 {
     public class TestController : Controller
     {
-        public string GetString()
-        {
-            return "Hello world!";
-        }
+        //public string GetString()
+        //{
+        //    return "Hello world!";
+        //}
 
         public ActionResult GetView()
         {
-            Employee emp = new Employee();
-            emp.FirstName = "Sukesh";
-            emp.LastName = "Marla";
-            emp.Salary = 1000;
+            var emp = new Employee("Sukesh", "Marla", 20000);
+
+            var vmEmp = new EmployeeViewModel(emp, "Admin");
 
             //ViewBag.Employee = emp;
-            return View("MyView", emp);
+            return View("MyView", vmEmp);
         }
     }
 }
