@@ -12,5 +12,14 @@ namespace Infra
         {
             return db.Employees.ToList();
         }
+        public static List<Employee> GetFakeData()
+        {
+            var employees = new List<Employee>()
+            {
+                new Employee("John", "Doe", 14000),
+                new Employee("Michael", "Jackson", 16000)
+            };
+            return employees;
+        }
     }
 }
