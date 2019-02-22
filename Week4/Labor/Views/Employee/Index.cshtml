@@ -8,18 +8,24 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>CreateEmployee</title>
+    <title>MyView</title>
 </head>
 <body>
-    <a href ="/Employee/AddNew">Add New</a>
+    
     <div>
-        <form action="/Employee/SaveEmployee" method="post">
-            First Name: <input type="text" id="TxtFName" name="FirstName" value="" /><br />
-            Last Name: <input type="text" id="TxtLName" name="LastName" value="" /><br />
-            Salary: <input type="text" id="TxtSalary" name="Salary" value="" /><br />
-            <input type="submit" name="BtnSave" value="Save Employee" />
-            <input type="button" name="BtnReset" value="Reset" />
-        </form>
+        <table>
+            <tr>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+            @foreach (EmployeeViewModel item in Model.Employees)
+            {
+                <tr>
+                    <td>@item.EmployeeName</td>
+                    <td style="background-color: @item.SalaryColor">@item.Salary</td>
+                </tr>
+            }
+        </table>      
     </div>
 </body>
 </html>
