@@ -18,6 +18,12 @@ namespace Labor.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(
+                scheme: "AuthScheme");
+            return RedirectToAction("Login");
+        }
         [HttpPost]
         public async Task<IActionResult> DoLogin(UserDetails u)
         {
