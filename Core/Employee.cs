@@ -11,7 +11,6 @@ namespace Core
         
         public Employee()
         {
-
         }
 
         public Employee(string firstName, string lastName = null, int salary = 0)
