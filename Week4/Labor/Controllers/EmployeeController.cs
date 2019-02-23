@@ -13,6 +13,7 @@ namespace Labor.Controllers
         public EmployeeController(SalesDbContext db) {this.db = db; }
         public ActionResult Index()
         {
+
             var model = new EmployeeListViewModel();
             var employees = Employees.Get(db);
             var list = new List<EmployeeViewModel>();
@@ -23,35 +24,45 @@ namespace Labor.Controllers
             }
 
             model.Employees = list;
+
             
-           
             return View("Index", model);
         }
 
         public ActionResult AddNew()
         {
-            return View("CreateEmployee");
+            return View("CreateEmployee", new CreateEmployeeViewModel());
         }
 
         public ActionResult SaveEmployee(Employee e, string BtnSubmit)
         {
-            switch (BtnSubmit)
-            {
-                case "Save Employee":
-                    if (ModelState.IsValid)
-                    {
-                        Employees emp = new Employees();
-                        emp.Save(e, db);
-                        return RedirectToAction("Index");
-                    }
-                    else
-                    {
-                        return View("CreateEmployee");
-                    }
-                case "Cancel":
-                    return RedirectToAction("Index");
-            }
-            return new EmptyResult();
+            if (BtnSubmit != "Save Employee") return RedirectToAction("Index");
+            if (!ModelState.IsValid) return View("CreateEmployee");
+            return save(e);
+            //switch (BtnSubmit)
+            //{
+            //    case "Save Employee":
+            //        if (ModelState.IsValid)
+            //        {
+            //            Employees emp = new Employees();
+            //            emp.Save(e, db);
+            //            return RedirectToAction("Index");
+            //        }
+            //        else
+            //        {
+            //            return View("CreateEmployee");
+            //        }
+            //    case "Cancel":
+            //        return RedirectToAction("Index");
+            //}
+            //return new EmptyResult();
+        }
+
+        private ActionResult save(Employee e)
+        {
+            Employees emp = new Employees();
+            emp.Save(e, db);
+            return RedirectToAction("Index");
         }
     }
 }
