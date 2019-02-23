@@ -28,5 +28,10 @@ namespace Infra
             };
             return employees;
         }
+
+        public static bool IsValidUser(UserDetails user)
+        {
+            return user.UserName == "Admin" && user.Password == "Admin"; 
+        }
     }
 }
