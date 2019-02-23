@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Core;
 using Facade;
 using Infra;
@@ -16,7 +17,6 @@ namespace Labor.Controllers
         [Authorize]
         public ActionResult Index()
         {
-
             var model = new EmployeeListViewModel();
             model.UserName = User.Identity.Name;
             var employees = Employees.Get(db);
@@ -26,10 +26,10 @@ namespace Labor.Controllers
                 var employee = new EmployeeViewModel(e);
                 list.Add(employee);
             }
-
             model.Employees = list;
-
-            
+            model.FooterData = new FooterViewModel();
+            model.FooterData.CompanyName = "TTÜ";
+            model.FooterData.Year = DateTime.Now.Year.ToString();
             return View("Index", model);
         }
         [Authorize]
