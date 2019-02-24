@@ -32,9 +32,9 @@ namespace Labor.Controllers
                 list.Add(employee);
             }
             model.Employees = list;
-            model.FooterData = new FooterViewModel();
-            model.FooterData.CompanyName = "TTÜ";
-            model.FooterData.Year = DateTime.Now.Year.ToString();
+            model.FooterData = new FooterViewModel("TTÜ");
+            //model.FooterData.CompanyName = "TTÜ";
+            //model.FooterData.Year = DateTime.Now.Year.ToString();
             return View("Index", model);
         }
         [Authorize]
