@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Core;
 using Microsoft.EntityFrameworkCore;
+//using Microsoft.EntityFrameworkCore ja installi relational package.
 
 namespace Infra
 {
