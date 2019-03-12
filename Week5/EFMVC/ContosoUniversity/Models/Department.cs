@@ -9,10 +9,9 @@ namespace ContosoUniversity.Models
 {
     public class Department
     {
-        //Create Models/Department.cs with the following code:
         public int DepartmentID { get; set; }
 
-        [StringLength(50, MinimumLength= 3)]
+        [StringLength(50, MinimumLength = 3)]
         public string Name { get; set; }
 
         [DataType(DataType.Currency)]
@@ -25,9 +24,10 @@ namespace ContosoUniversity.Models
         public DateTime StartDate { get; set; }
 
         public int? InstructorID { get; set; }
-    
+
         [Timestamp]
         public byte[] RowVersion { get; set; }
+
         public Instructor Administrator { get; set; }
         public ICollection<Course> Courses { get; set; }
     }
