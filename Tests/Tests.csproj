@@ -15,9 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\Facade\Facade.csproj" />
-    <ProjectReference Include="..\Infra\Infra.csproj" />
     <ProjectReference Include="..\Week4\Labor\Labor.csproj" />
   </ItemGroup>
 

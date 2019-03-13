@@ -19,5 +19,7 @@ namespace ContosoUniversity2.Models
         public Course Course { get; set; }
         public Student Student { get; set; }
 
+
+
     }
 }
