@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Text;
 using Core;
 using Microsoft.EntityFrameworkCore;
-//using Microsoft.EntityFrameworkCore ja installi relational package.
 
 namespace Infra
 {
-    public class SalesDbContext : DbContext
+    public class SalesDbContext : DbContext 
     {
         public SalesDbContext(DbContextOptions<SalesDbContext> options) : base(options) { }
 
@@ -17,6 +16,7 @@ namespace Infra
             builder.Entity<Employee>()
                 .ToTable("Employees");
         }
+
         public DbSet<Employee> Employees { get; set; }
     }
 }

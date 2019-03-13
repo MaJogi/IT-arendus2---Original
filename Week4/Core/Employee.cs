@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace Core
 {
     public class Employee
     {
-        
         public Employee()
         {
         }
-
-        public Employee(string firstName, string lastName = null, int salary = 0)
+        public Employee(string firstName,
+            string lastName, int salary)
         {
-            FirstName = firstName ?? string.Empty;
-            LastName = lastName ?? string.Empty;
+            FirstName = firstName;
+            LastName = lastName;
             Salary = salary;
         }
         public int EmployeeId { get; set; }
@@ -26,5 +24,8 @@ namespace Core
         public string LastName { get; set; }
         [SalaryValidation]
         public int Salary { get; set; }
+        
+
+
     }
 }

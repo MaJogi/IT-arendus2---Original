@@ -53,7 +53,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week6", "Week6", "{9EB20E92
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Week7", "Week7", "{1C2DF35C-BDA5-475D-A000-7BC60E608402}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity2", "ContosoUniversity2\ContosoUniversity2.csproj", "{BFFF6D60-EDB0-4BEB-9E18-2F559736D711}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ContosoUniversity2", "Week7\ContosoUniversity2\ContosoUniversity2.csproj", "{BFFF6D60-EDB0-4BEB-9E18-2F559736D711}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Week4\Core\Core.csproj", "{FFF3D1C4-32A9-4C85-8B41-37D6776D776D}"
 EndProject

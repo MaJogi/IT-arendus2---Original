@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Facade //Õppejõud kirjutas Labor.ViewModels?
+namespace Facade
 {
     public class CreateEmployeeViewModel
     {
